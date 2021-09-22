@@ -249,7 +249,10 @@ ul {
 
 .wwd-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.wwd-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Our team section */
@@ -273,7 +276,10 @@ ul {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-list-item {
