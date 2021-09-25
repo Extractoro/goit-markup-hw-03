@@ -15,6 +15,11 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
 }
 
 h1,
@@ -36,6 +41,7 @@ ul {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .link {
@@ -81,11 +87,13 @@ ul {
 
 .header {
   display: flex;
+  border: 1px solid #ececec;
 }
 
 .header-logo {
-  margin: 25px 0px;
   margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header-nav {
@@ -96,7 +104,7 @@ ul {
 .header-list {
   display: flex;
   flex-direction: row;
-  margin: 32px 0px;
+  padding: 32px 0px;
   margin-right: 330px;
 }
 
@@ -110,7 +118,7 @@ ul {
 
 .header-contact {
   display: flex;
-  margin: 32px 0px;
+  padding: 32px 0px;
 }
 
 .header-link {
@@ -157,8 +165,8 @@ ul {
 
 .first-section {
   background-color: #2f303a;
-  height: 600px;
-  margin-bottom: 95px;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .block {
@@ -177,17 +185,13 @@ ul {
   text-transform: uppercase;
   color: var(--primary-title-color);
   width: 700px;
-  margin-top: 200px;
   margin-bottom: 30px;
 }
 
 .first-section-btn {
-  margin-left: auto;
-  margin-right: auto;
   padding: 10px 32px;
   border: transparent;
   border-radius: 4px;
-  margin-bottom: 106px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -203,7 +207,8 @@ ul {
 /* Benefits Section */
 
 .benefits-class {
-  margin-bottom: 94px;
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .benefits-list {
@@ -233,7 +238,7 @@ ul {
 /* What we do section */
 
 .wwd-section {
-  margin-bottom: 95px;
+  padding-bottom: 95px;
 }
 
 .wwd-title {
@@ -260,6 +265,7 @@ ul {
 .team-section {
   background-color: #f5f4fa;
   padding-bottom: 95px;
+  padding-top: 95px;
 }
 
 .team-title {
@@ -270,7 +276,7 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
-  padding-top: 95px;
+
   margin-bottom: 50px;
 }
 
@@ -315,16 +321,13 @@ ul {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
   display: inline-block;
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
-
-.footer-list {
-  padding-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .footer-item:not(:last-child) {
@@ -360,12 +363,8 @@ ul {
 
 /* Portfolio */
 
-.line {
-  border: 1px solid #ececec;
-}
-
 .portfolio-section {
-  margin: 95px 0;
+  padding: 95px 0;
 }
 
 /* Filter */
@@ -416,32 +415,31 @@ ul {
   flex-wrap: wrap;
   font-size: 16px;
   line-height: 1.88;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .product-item {
   background: #ffffff;
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
   margin-right: 30px;
   margin-bottom: 30px;
-}
-
-.product-list > .product-item:nth-child(3n) {
-  margin-right: 0;
+  width: 370px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .product-block {
-  padding-left: 24px;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .product-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
-  padding-top: 20px;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .product-description {
@@ -450,5 +448,4 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-bottom: 20px;
 }
